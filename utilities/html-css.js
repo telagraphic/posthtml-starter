@@ -17,5 +17,5 @@ const html = fs.readFileSync('html/templates/views/index.html');
 
 
 posthtml()
-    .use(require('posthtml-classes')(config))
-    .process(html);
+  .use(require('posthtml-classes')(config))
+  .process(html);

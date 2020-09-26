@@ -7,5 +7,5 @@ posthtml()
     .use(favIconPlugin({ outDir: "./dist/img/favicons", configuration: { path: "img/favicons" } }))
     .process(html)
     .then((res) => {
-        fs.writeFileSync('html/pages/index.html', res.html);
+        fs.writeFileSync('html/templates/components/head.html', res.html);
     });
